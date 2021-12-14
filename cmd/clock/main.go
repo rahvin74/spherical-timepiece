@@ -43,6 +43,11 @@ func main() {
 			continue
 		}
 
+		if totalBallsInt < 27 || totalBallsInt > 127 {
+			fmt.Println("Invalid entry. You must enter a number between 27 and 127!")
+			continue
+		}
+
 		spheres := make([]timesphere.MinuteBall, totalBallsInt, totalBallsInt)
 
 		for i := range spheres {
