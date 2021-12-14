@@ -40,7 +40,7 @@ func NewMechanism() Mechanism {
 	return clock
 }
 
-// Run takes as input a list of MinuteBalls, the runs the clock Mechanism
+// Run takes as input a list of MinuteBalls, then runs the clock Mechanism
 func (m *Mechanism) Run(balls []timesphere.MinuteBall) int {
 	m.ballBucket = balls
 	m.ballCount = len(balls)
