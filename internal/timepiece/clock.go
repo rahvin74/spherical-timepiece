@@ -26,7 +26,7 @@ type Mechanism struct {
 	timeCount int
 }
 
-// NewMechanism returns a newly initialized Mechanism objecct
+// NewMechanism returns a newly initialized Mechanism object
 func NewMechanism() Mechanism {
 	clock := Mechanism{
 		minuteTrack:  make(chan Tick),
